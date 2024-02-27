@@ -1,0 +1,30 @@
+0000: C0 14 3D D5 72 8B 00 1D A1 38 58 00 08 00 45 00 	..=.r....8X...E.
+0010: 00 28 D4 31 00 00 F4 01 05 A2 C6 14 63 82 81 15 	.(.1........c...
+0020: 42 55 08 00 60 B1 97 4E 00 00 00 00 00 00 00 00 	BU..`..N........
+0030: 00 00 00 00 00 00 00 00 00 00 00 00             	............
+
+
+Ether Header
+C0 14 3D D5 72 8B = dest
+00 1D A1 38 58 00 = src
+08 00 = EtherType
+
+IP Header
+45 (4 = IP Version, 5 * 4 = Header length)
+00 = Type of Service
+00 = 
+28 = Total length (Hex to Decimal)
+D4 31 = Identification (Hex to Decimal)
+00 = Flags
+00 = Fragment Offset
+F4 = Time to live
+01 = Protocol
+05 A2 = Header checksum
+C6 14 63 82 = Source addr  joined by .(Hex to Decimal)
+81 15 42 55 = Dest addr  joined by .(Hex to Decimal)
+Options
+ 
+ICMP Header
+08 = Type Echo Request
+00 = Code
+60 B1 = Checksum

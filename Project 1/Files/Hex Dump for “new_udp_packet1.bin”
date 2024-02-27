@@ -1,0 +1,37 @@
+0000: 00 00 0C 07 AC 01 C0 14 3D D5 72 8B 08 00 45 00 	........=.r...E.
+0010: 00 3D 54 33 40 00 40 11 9E EC 81 15 42 55 81 15 	.=T3@.@.....BU..
+0020: 03 11 8B 30 00 35 00 29 9C 1D F3 8E 01 00 00 01 	...0.5.)........
+0030: 00 00 00 00 00 00 04 70 6C 75 73 06 67 6F 6F 67 	.......plus.goog
+0040: 6C 65 03 63 6F 6D 00 00 01 00 01                	le.com.....
+
+
+Ether Header
+00 00 0C 07 AC 01 = dest
+C0 14 3D D5 72 8B = src
+08 00 = EtherType
+
+IP Header
+45 (4 = IP Version, 5 * 4 = Header length)
+00 = Type of Service
+00 = 
+3D = Total length (Hex to Decimal)
+54 33 = Identification (Hex to Decimal)
+40 = Flags
+00 = Fragment Offset
+40 = Time to live
+11 = Protocol
+9E EC = Header checksum
+81 15 42 55 = Source addr (Hex to Decimal) joined by .
+81 15 03 11 = Dest addr (Hex to Decimal) joined by .
+Options
+
+UDP Header
+8B 30 = Source Port
+00 35 = Destination Port
+00 29 = Length
+9C 1D = Checksum
+
+Data
+8B 30 00 35 00 29 9C 1D F3 8E 01 00 00 01 				...0.5.)........
+0030: 00 00 00 00 00 00 04 70 6C 75 73 06 67 6F 6F 67 	.......plus.goog
+0040: 6C 65 03 63 6F 6D 00 00 01 00 01                	le.com.....

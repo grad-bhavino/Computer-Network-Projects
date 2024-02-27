@@ -1,0 +1,58 @@
+0000: 00 00 0C 07 AC 01 C0 14 3D D5 72 8B 08 00 45 00 	........=.r...E.
+0010: 00 FC 7E EC 40 00 40 06 4A 9E 81 15 42 55 AC D9 	..~.@.@.J...BU..
+0020: 00 2E CD 56 01 BB 19 47 77 F9 B1 51 18 9E 80 18 	...V...Gw..Q....
+0030: 07 28 75 B0 00 00 01 01 08 0A 00 07 EB 7B 54 10 	.(u..........{T.
+0040: DC 48 17 03 03 00 C3 00 00 00 00 00 00 00 71 3E 	.H............q>
+0050: FC 3B B6 CE FA B3 67 91 9E 87 B9 AC 68 1C 26 96 	.;....g.....h.&.
+0060: DC 87 A4 E2 8F 7C BB B2 AD B3 BD A3 3F BF 37 B2 	.....|......?.7.
+0070: E1 9A 9D 8C A5 B0 8C A5 59 BD 9E BF 2F 98 55 8F 	........Y.../.U.
+0080: 9C AD 93 FF C3 67 99 3A FC 80 C8 C9 EA 66 38 FB 	.....g.:.....f8.
+0090: 97 2F F9 47 F3 98 40 9A 4E 6D 5D F5 B9 C8 3A 9D 	./.G..@.Nm]...:.
+00A0: DF E6 06 8E 42 08 CC C3 58 CF 34 EF E5 65 5A E9 	....B...X.4..eZ.
+00B0: 2B AA F9 FC E5 7F C5 62 A5 7F F6 10 4D DB 9B 3D 	+.....b...M..=
+00C0: 04 EA 56 4F 16 30 05 4E 71 91 D1 20 C8 82 3E 21 	..VO.0.Nq.. ..>!
+00D0: A0 B9 3F 7A 48 93 C5 A4 76 F4 94 D6 A8 9D 8F D8 	..?zH...v.......
+00E0: 85 96 23 46 9A EE A1 FF 33 57 98 55 A0 B3 30 B0 	..#F....3W.U..0.
+00F0: 29 05 2C F6 57 19 7A 17 44 83 82 29 E8 AA 81 F4 	).,.W.z.D..)....
+
+0100: C4 B2 93 91 A6 9F 6B 8A ED 17                   	......k...
+
+
+
+Ether Header
+00 00 0C 07 AC 01 = dest
+C0 14 3D D5 72 8B = src
+08 00 = EtherType
+
+IP Header
+45 (4 = IP Version, 5 * 4 = Header length)
+00 = Type of Service
+00 = 
+FC = Total length (Hex to Decimal)
+7E EC = Identification (Hex to Decimal)
+40 = Flags
+00 = Fragment Offset
+40 = Time to live
+06 = Protocol
+4A 9E = Header checksum
+81 15 42 55 = Source addr (Hex to Decimal) joined by .
+AC D9 00 2E = Dest addr (Hex to Decimal) joined by .
+Options
+ 
+TCP Header
+CD 56 = Source Port
+01 BB = Destination Port
+19 47 77 F9 = Sequence Number
+B1 51 18 9E = Ack Number
+8(0 not needed) = Data Offset
+18 = Flags
+07 28 = Window
+75 B0 = Checksum
+00 00 = Urgent Pointer
+
+Data
+CD 56 01 BB 19 47 77 F9 B1 51 18 9E 80 18 			...V...Gw..Q....
+07 28 75 B0 00 00 01 01 08 0A 00 07 EB 7B 54 10 	.(u..........{T.
+DC 48 17 03 03 00 C3 00 00 00 00 00 00 00 71 3E 	.H............q>
+FC 3B B6 CE FA B3 67 91 9E 87 B9 AC 68 1C 26 96 	.;....g.....h.&.
+DC 87
